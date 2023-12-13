@@ -1,0 +1,41 @@
+.main {
+  display: flex;
+  position: relative;
+  padding-top: 6rem; 
+}
+
+.side {
+  position: relative;
+  width: 25px;
+  transition: width 100ms ease 0s;
+  background-color: var(--01-fg-sub1); 
+}
+
+.side:hover {
+  width: 240px; 
+  transition: width 250ms ease 0s;
+}
+
+.wrapper {
+  --content-width: minmax(auto, 800px); 
+  --margin-width: minmax(128px, auto); 
+  display: grid;
+  padding-bottom: 20vh; 
+  grid-template-columns: [full-start] var(--margin-width) [content-start] var(--content-width) [content-end] var(--margin-width) [full-end]; 
+  width: 100%; 
+}
+
+.wrapper > p {
+  grid-column: content;
+  gap: inherit; 
+}
+
+.wrapper > .wrap-child {
+  grid-column: content;
+  gap: inherit; 
+}
+
+h1 {
+  font-family: "Alagard"; 
+  font-size: 2.5rem; 
+}

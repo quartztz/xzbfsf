@@ -1,0 +1,14 @@
+{
+  "name": "xzbfsf",
+  "version": "1.0.0",
+  "description": "voice of me and me alone",
+  "main": "index.js",
+  "scripts": {
+    "build": "env NODE_ENV=production npx @11ty/"
+  },
+  "author": "quartztz",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

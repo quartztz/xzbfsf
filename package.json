@@ -4,7 +4,8 @@
   "description": "voice of me and me alone",
   "main": "index.js",
   "scripts": {
-    "build": "env NODE_ENV=production npx @11ty/"
+    "build:eleventy:prod": "ELEVENTY_ENV=production eleventy",
+    "build:prod": "npm run build:eleventy:prod"
   },
   "author": "quartztz",
   "license": "ISC",

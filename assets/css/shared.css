@@ -9,7 +9,7 @@
   font-family: "Alagard"; 
   font-style: normal; 
   font-weight: 600; 
-  src: url("assets/fonts/alagard.woff2") format("woff2");
+  src: url("../fonts/alagard.woff2") format("woff2");
   font-display: swap; 
 }
 
@@ -17,7 +17,7 @@
   font-family: "Archivo"; 
   font-style: light; 
   font-weight: 200; 
-  src: url("assets/fonts/Archivo-Light.woff2") format("woff2"); 
+  src: url("../fonts/Archivo-Light.woff2") format("woff2"); 
   font-display: swap; 
 }
 
@@ -25,7 +25,7 @@
   font-family: "Geneva 9.1"; 
   font-style: normal; 
   font-weight: 400; 
-  src: url("assets/fonts/geneva-9-1.woff2") format("woff2");
+  src: url("../fonts/geneva-9-1.woff2") format("woff2");
   font-display: swap; 
 }
 

@@ -38,13 +38,13 @@ jobs:
       - name: debug step
         run: ls -R
 
-      - name: Deploy step 
+      - name: deploy step 
         uses: peaceiris/actions-gh-pages@v3.8.0
         with: 
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
 
           publish_dir: _site
           publish_branch: gh-pages
-      - name: End step
+      - name: end step
         run: echo "Did this work?"
 

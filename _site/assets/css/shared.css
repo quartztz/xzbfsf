@@ -1,0 +1,42 @@
+:root {
+  --01-bg-main: #cdcddc; 
+  --01-fg-main: #191920; 
+  --01-fg-sub1: #545462; 
+  --01-fg-sub2: #707082; 
+}
+
+@font-face {
+  font-family: "Alagard"; 
+  font-style: normal; 
+  font-weight: 600; 
+  src: url("../fonts/alagard.woff2") format("woff2");
+  font-display: swap; 
+}
+
+@font-face {
+  font-family: "Archivo"; 
+  font-style: light; 
+  font-weight: 200; 
+  src: url("../fonts/Archivo-Light.woff2") format("woff2"); 
+  font-display: swap; 
+}
+
+@font-face {
+  font-family: "Geneva 9.1"; 
+  font-style: normal; 
+  font-weight: 400; 
+  src: url("../fonts/geneva-9-1.woff2") format("woff2");
+  font-display: swap; 
+}
+
+body {
+  background-color: var(--01-bg-main);
+}
+
+* {
+  color: var(--01-fg-main); 
+  font-family: "Archivo"; 
+  line-height: 1.5;
+  font-size: 16pt;  
+  box-sizing: border-box; 
+}

@@ -30,10 +30,13 @@ jobs:
         with: 
           node-version: current
 
-      - name: Build step 
+      - name: build step 
         run: | 
           npm ci 
           npm run build
+
+      - name: debug step
+        run: ls -R
 
       - name: Deploy step 
         uses: peaceiris/actions-gh-pages@v3.8.0

@@ -25,13 +25,23 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
+      - name: update node.js
+        uses: actions/setup-node@v3
+        with: 
+          node-version: current
+
       - name: Build step 
-        run: npm run build
+        run: | 
+          npm ci 
+          npm run build
 
       - name: Deploy step 
-        uses: actions/upload-pages-artifact@v2
+        uses: peaceiris/actions-gh-pages@v3.8.0
+        with: 
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
 
+          publish_dir: _site
+          publish_branch: main
       - name: End step
         run: echo "Did this work?"
 

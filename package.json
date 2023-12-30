@@ -1,0 +1,15 @@
+{
+  "name": "xzbfsf",
+  "version": "1.0.0",
+  "description": "voice of me and me alone",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "build:prod": "npm run build:eleventy:prod"
+  },
+  "author": "quartztz",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
